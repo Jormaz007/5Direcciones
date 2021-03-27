@@ -1,73 +1,56 @@
-    Jormi_CincoEjes.h
-	  Librería de manejo del modulo 5 direcciones + reset + set
-    v0.1	20210214	Multitask	
-	  IMPORTANTE: COM puesto a GND con resistencia 10K como pull down Cuando el boton se pulsa se lee Vcc, sino esta pulsado lee GND
-
-    Jormi_CincoEjes(byte pinUP, byte pinDWN, byte pinLFT, byte pinRHT, byte pinMID, byte pinSET, byte pinRST);
-        Constructor
+    	Jormi_CincoEjes.h
+	Librería de manejo del modulo 5 direcciones + reset + set
+    	v0.1	20210214	Multitask	
+	
+	IMPORTANTE: COM puesto a GND con resistencia 10K como pull down Cuando el boton se pulsa se lee Vcc, sino esta pulsado lee GND
 
 
-    byte  estado()
-      Devuelve el byte que contiene la lectura de pines
+    	Jormi_CincoEjes(byte pinUP, byte pinDWN, byte pinLFT, byte pinRHT, byte pinMID, byte pinSET, byte pinRST);
+        	Constructor
 
 
-    bool arriba()
+	byte  estado()
+      		Devuelve el byte que contiene la lectura de pines
 
 
-	Arriba 
-  Return True si pulsado UP
+	bool arriba()
+		Arriba 
+		Return true si pulsado UP
 
 
-/*	
-	Abajo
-	True si pulsado DWN
-*/
-bool abajo()
+	bool abajo()
+		Abajo
+		Return true si pulsado DWN
 
 
-/*	
-	Izquierda
-	True si pulsado LFT
-*/
-bool izquierda()
+	bool izquierda()
+		Izquierda
+		Return true si pulsado LFT
 
 
-/*	
-	Derecha
-	True si pulsado RHT
-*/
-bool derecha()
+	bool derecha()
+		Derecha
+		Return true si pulsado RHT
 
 
-/*	
-	Centro
-	True si pulsado MID
-*/
-bool centro()
+	bool centro()
+		Centro
+		Return true si pulsado MID
 
 
-/*	
-	Set
-	True si pulsado SET
-*/
-bool set()
+	bool set()
+		Set
+		Return true si pulsado SET
 
 
-/*	
-	Reset
-	True si pulsado RST
-*/
-bool reset()
+	bool reset()
+		Reset
+		Return true si pulsado RST
 
 
-/*
-	Update
-*/
-void update()
+	update()
+		Update del loop
 
 
-/*
-	Información
-	Muestra en ventana de depuración info de las variables
-*/
-void informacion()
+	informacion()
+		Muestra en ventana de depuración (puerto serie) info de las variables
